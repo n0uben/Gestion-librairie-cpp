@@ -1,30 +1,24 @@
 cmake_minimum_required(VERSION 3.16)
-project(mkcp_inter)
 
-#quelle compilateur
-set(CMAKE_CXX_COMPILER "gcc")
-#quel version de c++
-set(CMAKE_CXX_STANDARD 14)
+project(Projet-cpp
+        VERSION 1.0
+        DESCRIPTION "Projet C++ DUT AS 2021/2022"
+        LANGUAGES CXX)
 
-#correspond a loptimisation utilisée par le compilateur
-set(CMAKE_CXX_FLAGS "-O3")
-
-include_directories(.)
-
-# link_directories()
-
-add_executable(mkcp_inter
-        main.cpp
-        Dictionnaires.cpp
-        Dictionnaires.h
-        Documents.cpp
-        Documents.h
-        Livres.cpp
-        Livres.h
-        Manuels.cpp
-        Manuels.h
-        Romans.cpp
-        Romans.h
-        StockDocuments.cpp
-        StockDocuments.h
+add_executable( Projet-cpp
+                main.cpp
+                Dictionnaires.h
+                Dictionnaires.cpp
+                Documents.h
+                Documents.cpp
+                Livres.h
+                Livres.cpp
+                Manuels.h
+                Manuels.cpp
+                Romans.h
+                Romans.cpp
+                StockDocuments.h
+                StockDocuments.cpp
+                
 )
+target_compile_features(Projet-cpp PRIVATE cxx_std_14)
