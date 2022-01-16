@@ -1,0 +1,1 @@
+gcc -O3 CMakeFiles/mkcp_inter.dir/main.cpp.o CMakeFiles/mkcp_inter.dir/Dictionnaires.cpp.o CMakeFiles/mkcp_inter.dir/Documents.cpp.o CMakeFiles/mkcp_inter.dir/Livres.cpp.o CMakeFiles/mkcp_inter.dir/Manuels.cpp.o CMakeFiles/mkcp_inter.dir/Romans.cpp.o CMakeFiles/mkcp_inter.dir/StockDocuments.cpp.o -o mkcp_inter 
