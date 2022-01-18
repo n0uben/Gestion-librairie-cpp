@@ -13,5 +13,15 @@ using namespace std;
 
 int main(void)
 {
-    cout << "hello world" << endl;
+
+    Documents monDocument("Le rouge et le noir");
+
+    double frais = monDocument.calculFraisTransport(10);
+
+    cout << frais << endl;
+
+    string titre = monDocument.getTitre();
+
+    cout << "Le titre du document est : " << titre << endl;
+
 }
