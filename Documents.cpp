@@ -17,7 +17,6 @@ Documents::Documents(std::string titre ): titre(titre), frais(0)
 }
 
 //DESTRUCTEUR
-
 Documents::~Documents(){/*ya R*/}
 
 // GETTERS
@@ -31,7 +30,6 @@ int Documents::getFrais() const
 }
 
 //SETTERS
-
 void Documents::setTitre(string titre)
 {
     this->titre = titre;
@@ -42,6 +40,9 @@ void Documents::setFrais(int frais)
     if (frais > 0)
     {
         this->frais = frais;
+    }
+    else {
+        this->frais = 0;
     }
 }
 
