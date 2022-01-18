@@ -18,15 +18,32 @@ Documents::Documents(std::string titre ): titre(titre), frais(0)
 
 //DESTRUCTEUR
 
+Documents::~Documents(){/*ya R*/}
+
 // GETTERS
 string Documents::getTitre() const
 {
-    return titre;
+    return this->titre;
+}
+int Documents::getFrais() const
+{
+    return this->frais;
 }
 
 //SETTERS
 
-// YA R POUR LINSTANT
+void Documents::setTitre(string titre)
+{
+    this->titre = titre;
+}
+
+void Documents::setFrais(int frais)
+{
+    if (frais > 0)
+    {
+        this->frais = frais;
+    }
+}
 
 // METHODES
 double Documents::calculFraisTransport(int kilometres) const

@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/benjamin/projects/projet-cpp/Dictionnaires.cpp
-Dictionnaires.h
-/home/benjamin/projects/projet-cpp/Dictionnaires.h
-
 /home/benjamin/projects/projet-cpp/Dictionnaires.h
 
 /home/benjamin/projects/projet-cpp/Documents.cpp
@@ -24,19 +20,11 @@ Documents.h
 string
 -
 
-/home/benjamin/projects/projet-cpp/Livres.cpp
-
 /home/benjamin/projects/projet-cpp/Livres.h
-
-/home/benjamin/projects/projet-cpp/Manuels.cpp
 
 /home/benjamin/projects/projet-cpp/Manuels.h
 
-/home/benjamin/projects/projet-cpp/Romans.cpp
-
 /home/benjamin/projects/projet-cpp/Romans.h
-
-/home/benjamin/projects/projet-cpp/StockDocuments.cpp
 
 /home/benjamin/projects/projet-cpp/StockDocuments.h
 
