@@ -6,18 +6,17 @@
 using namespace std;
 
 // CONSTRUCTEUR
-Documents::Documents(): titre("Ce document n'a pas de titre"), frais(0)
+Documents::Documents(): titre("Ce document n'a pas de titre"), fraisFixes(0)
 {
 
 }
 
-Documents::Documents(std::string titre ): titre(titre), frais(0)
+Documents::Documents(std::string titre ): titre(titre), fraisFixes(0)
 {
 
 }
 
 //DESTRUCTEUR
-Documents::~Documents(){/*ya R*/}
 
 // GETTERS
 string Documents::getTitre() const
@@ -26,23 +25,23 @@ string Documents::getTitre() const
 }
 int Documents::getFrais() const
 {
-    return this->frais;
+    return this->fraisFixes;
 }
 
 //SETTERS
-void Documents::setTitre(string titre)
+void Documents::setTitre(string nouveauTitre)
 {
-    this->titre = titre;
+    this->titre = nouveauTitre;
 }
 
-void Documents::setFrais(int frais)
+void Documents::setFraisFixes(int nouveauxFraisFixes)
 {
-    if (frais > 0)
+    if (nouveauxFraisFixes > 0)
     {
-        this->frais = frais;
+        this->fraisFixes = nouveauxFraisFixes;
     }
     else {
-        this->frais = 0;
+        this->fraisFixes = 0;
     }
 }
 

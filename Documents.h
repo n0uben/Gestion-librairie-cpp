@@ -11,7 +11,6 @@ class Documents
         Documents(std::string titre);
 
         //Destructeur
-        ~Documents(){/*y’a R*/};
 
         //Getters
         std::string getTitre() const;
@@ -19,7 +18,7 @@ class Documents
 
         //Setters
         void setTitre(std::string titre);
-        void setFrais(int frais);
+        void setFraisFixes(int nouveauxFraisFixes);
 
         //Méthodes
         double calculFraisTransport(int kilometres) const;
@@ -28,7 +27,7 @@ class Documents
     // d’accéder aux attributs parents
     protected:
         std::string titre;
-        int frais;
+        int fraisFixes;
 };
 
 #endif
