@@ -6,12 +6,12 @@
 using namespace std;
 
 // CONSTRUCTEUR
-Documents::Documents(): titre("Ce document n'a pas de titre")
+Documents::Documents(): titre("Ce document n'a pas de titre"), frais(0)
 {
 
 }
 
-Documents::Documents(std::string titre ): titre(titre)
+Documents::Documents(std::string titre ): titre(titre), frais(0)
 {
 
 }

@@ -8,7 +8,7 @@ class Documents
     public:
         // Constructeur
         Documents();
-        Documents(std::string titre );
+        Documents(std::string titre);
 
         std::string getTitre() const;
         double calculFraisTransport(int kilometres) const;
