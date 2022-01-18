@@ -40,7 +40,8 @@ void Documents::setFraisFixes(int nouveauxFraisFixes)
     {
         this->fraisFixes = nouveauxFraisFixes;
     }
-    else {
+    else 
+    {
         this->fraisFixes = 0;
     }
 }
