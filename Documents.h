@@ -6,8 +6,7 @@
 class Documents
 {
     public:
-        // Constructeurs
-        Documents();
+        // Constructeur
         Documents(std::string titre);
 
         //Destructeur
