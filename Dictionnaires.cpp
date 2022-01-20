@@ -1,4 +1,5 @@
 #include <string>
+#include <iostream>
 
 #include "Dictionnaires.h"
 
@@ -35,4 +36,13 @@ void Dictionnaires::setFraisParticulier(int nouveauxFraisParticulier)
     {
         this->fraisParticulier = 0;
     }
+}
+
+//Methodes
+void Dictionnaires::afficher() const
+{
+    Documents::afficher();
+
+    cout << "Langue : " << this->getLangue() << endl;
+    cout << "Frais particulier : " << this->getFraisParticulier() << "€" << endl;
 }

@@ -18,6 +18,9 @@ class Dictionnaires : public Documents
         void setLangue(std::string nouvelleLangue);
         void setFraisParticulier(int nouveauxFraisParticulier);
 
+        //Methodes
+        void afficher() const;
+
     protected:
         std::string langue;
         int fraisParticulier;

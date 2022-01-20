@@ -20,6 +20,7 @@ class Documents
         void setFraisFixes(int nouveauxFraisFixes);
 
         //Méthodes
+        void afficher() const;
         double calculFraisTransport(int kilometres) const;
 
     //le status protected permet aux classe filles
