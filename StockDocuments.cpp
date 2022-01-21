@@ -25,3 +25,7 @@ void StockDocuments::afficherStock() const
     }
 }
 
+double StockDocuments::fraisLivraison(int kilometres) const
+{
+    return 0.5;
+}

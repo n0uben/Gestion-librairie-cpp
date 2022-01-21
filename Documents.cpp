@@ -20,7 +20,7 @@ int Documents::getNumen() const
 {
     return this->numen;
 }
-int Documents::getFrais() const
+double Documents::getFrais() const
 {
     return this->fraisFixes;
 }
@@ -35,7 +35,7 @@ void Documents::setNumen(int nouveauNumen)
     this->numen = nouveauNumen;
 }
 
-void Documents::setFraisFixes(int nouveauxFraisFixes)
+void Documents::setFraisFixes(double nouveauxFraisFixes)
 {
     if (nouveauxFraisFixes > 0)
     {

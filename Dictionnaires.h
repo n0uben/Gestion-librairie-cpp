@@ -12,12 +12,11 @@ class Dictionnaires : public Documents
 
         //Getters
         std::string getLangue() const;
-        int getFraisParticulier() const;
+        double getFraisParticulier() const;
 
         //Setters
         void setLangue(std::string nouvelleLangue);
-        void setFraisParticulier(int nouveauxFraisParticulier);
-        
+        void setFraisParticulier(double nouveauxFraisParticulier);        
 
         //Methodes
         void afficher() const;
@@ -25,7 +24,7 @@ class Dictionnaires : public Documents
 
     private:
         std::string langue;
-        int fraisParticulier;
+        double fraisParticulier;
 };
 
 #endif

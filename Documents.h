@@ -14,12 +14,12 @@ class Documents
         //Getters
         std::string getTitre() const;
         int getNumen() const;
-        int getFrais() const;
+        double getFrais() const;
 
         //Setters
         void setTitre(std::string nouveauTitre);
         void setNumen(int nouveauNumen);
-        void setFraisFixes(int nouveauxFraisFixes);
+        void setFraisFixes(double nouveauxFraisFixes);
 
         //Méthodes
         void afficher() const;
@@ -31,7 +31,7 @@ class Documents
     protected:
         std::string titre;
         int numen;
-        int fraisFixes;
+        double fraisFixes;
 };
 
 #endif

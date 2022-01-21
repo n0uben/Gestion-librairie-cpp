@@ -16,7 +16,7 @@ std::string Dictionnaires::getLangue() const
 {
     return this->langue;
 }
-int Dictionnaires::getFraisParticulier() const
+double Dictionnaires::getFraisParticulier() const
 {
     return this->fraisParticulier;
 }
@@ -26,7 +26,7 @@ void Dictionnaires::setLangue(std::string nouvelleLangue)
 {
     this->langue = nouvelleLangue;
 }
-void Dictionnaires::setFraisParticulier(int nouveauxFraisParticulier)
+void Dictionnaires::setFraisParticulier(double nouveauxFraisParticulier)
 {
     if (nouveauxFraisParticulier > 0)
     {
