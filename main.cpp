@@ -13,7 +13,7 @@ using namespace std;
 
 int main(void)
 {
-    Documents monDocument("Le rouge et le noir");
+    Documents monDocument("Le rouge et le noir", 1);
     Dictionnaires monDictionnaire("Dictionnaire Francais/Anglais", "Anglais");
 
     //tests masquage fonction (héritage)

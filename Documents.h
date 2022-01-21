@@ -7,16 +7,18 @@ class Documents
 {
     public:
         // Constructeur
-        Documents(std::string titre);
+        Documents(std::string titre, int numen);
 
         //Destructeur
 
         //Getters
         std::string getTitre() const;
+        int getNumen() const;
         int getFrais() const;
 
         //Setters
-        void setTitre(std::string titre);
+        void setTitre(std::string nouveauTitre);
+        void setNumen(int nouveauNumen);
         void setFraisFixes(int nouveauxFraisFixes);
 
         //Méthodes
@@ -27,6 +29,7 @@ class Documents
     // d’accéder aux attributs parents
     protected:
         std::string titre;
+        int numen;
         int fraisFixes;
 };
 

@@ -7,10 +7,7 @@ using namespace std;
 
 // CONSTRUCTEUR
 
-Documents::Documents(std::string titre ): titre(titre), fraisFixes(2)
-{
-
-}
+Documents::Documents(std::string titre, int numen): titre(titre), numen(numen), fraisFixes(2) {}
 
 //DESTRUCTEUR
 
@@ -18,6 +15,10 @@ Documents::Documents(std::string titre ): titre(titre), fraisFixes(2)
 string Documents::getTitre() const
 {
     return this->titre;
+}
+int Documents::getNumen() const
+{
+    return this->numen;
 }
 int Documents::getFrais() const
 {
@@ -28,6 +29,10 @@ int Documents::getFrais() const
 void Documents::setTitre(string nouveauTitre)
 {
     this->titre = nouveauTitre;
+}
+void Documents::setNumen(int nouveauNumen)
+{
+    this->numen = nouveauNumen;
 }
 
 void Documents::setFraisFixes(int nouveauxFraisFixes)
@@ -46,6 +51,7 @@ void Documents::setFraisFixes(int nouveauxFraisFixes)
 void Documents::afficher() const
 {
     cout << "Titre : " << this->getTitre() << endl;
+    cout << "Numen : " << this->getNumen() << endl;
     cout << "Frais fixes : " << this->getFrais() << "€" << endl;
 }
 
