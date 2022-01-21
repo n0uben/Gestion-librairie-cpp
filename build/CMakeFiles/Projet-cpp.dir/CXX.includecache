@@ -6,37 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/benjamin/projects/projet-cpp/Dictionnaires.cpp
-string
--
-iostream
--
-Dictionnaires.h
-/home/benjamin/projects/projet-cpp/Dictionnaires.h
-
 /home/benjamin/projects/projet-cpp/Dictionnaires.h
 string
 -
 Documents.h
 /home/benjamin/projects/projet-cpp/Documents.h
 
-/home/benjamin/projects/projet-cpp/Documents.cpp
-iostream
--
-string
--
-Documents.h
-/home/benjamin/projects/projet-cpp/Documents.h
-
 /home/benjamin/projects/projet-cpp/Documents.h
 string
 -
-
-/home/benjamin/projects/projet-cpp/Livres.h
-
-/home/benjamin/projects/projet-cpp/Manuels.h
-
-/home/benjamin/projects/projet-cpp/Romans.h
 
 /home/benjamin/projects/projet-cpp/StockDocuments.cpp
 iostream
@@ -59,22 +37,4 @@ vector
 -
 Documents.h
 /home/benjamin/projects/projet-cpp/Documents.h
-
-/home/benjamin/projects/projet-cpp/main.cpp
-iostream
--
-string
--
-Dictionnaires.h
-/home/benjamin/projects/projet-cpp/Dictionnaires.h
-Documents.h
-/home/benjamin/projects/projet-cpp/Documents.h
-Livres.h
-/home/benjamin/projects/projet-cpp/Livres.h
-Manuels.h
-/home/benjamin/projects/projet-cpp/Manuels.h
-Romans.h
-/home/benjamin/projects/projet-cpp/Romans.h
-StockDocuments.h
-/home/benjamin/projects/projet-cpp/StockDocuments.h
 

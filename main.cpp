@@ -15,20 +15,19 @@ int main(void)
 {
 
     Documents monDocument("Le rouge et le noir", 1);
-    Dictionnaires monDictionnaire("Dictionnaire Francais/Anglais", 2, "Anglais");
+    Documents monDocument2("Madame Bovary", 2);
+    Dictionnaires monDictionnaire("Dictionnaire Francais/Anglais", 3, "Anglais");
 
     StockDocuments monStock;
     // monStock.ajouterDansCollection(monDocument);
     // monStock.ajouterDansCollection(monDictionnaire);
     monStock.ajouterDansCollection(&monDocument);
+    monStock.ajouterDansCollection(&monDocument2);
     monStock.ajouterDansCollection(&monDictionnaire);
 
     monStock.afficherStock();
 
-    cout << monDocument.fraisLivraison(20) << endl;
-    cout << monDictionnaire.fraisLivraison(20) << endl;
-    cout << endl ;
-    cout << monStock.fraisLivraison(20) << endl;
+    cout << "Total : " << monStock.fraisLivraison(20) << "€" << endl;
 
     // monStock.afficherStock();
 }
