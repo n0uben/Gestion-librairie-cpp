@@ -17,11 +17,13 @@ class Dictionnaires : public Documents
         //Setters
         void setLangue(std::string nouvelleLangue);
         void setFraisParticulier(int nouveauxFraisParticulier);
+        
 
         //Methodes
         void afficher() const;
+        double fraisLivraison(int kilometres) const;
 
-    protected:
+    private:
         std::string langue;
         int fraisParticulier;
 };

@@ -126,4 +126,5 @@ CMakeFiles/Projet-cpp.dir/StockDocuments.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /home/noureux2u/Documents/projects/projet-cpp/StockDocuments.h \
- /home/noureux2u/Documents/projects/projet-cpp/Documents.h
+ /home/noureux2u/Documents/projects/projet-cpp/Documents.h \
+ /home/noureux2u/Documents/projects/projet-cpp/Dictionnaires.h

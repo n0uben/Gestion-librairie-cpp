@@ -552,7 +552,8 @@ CMakeFiles/Projet-cpp.dir/StockDocuments.cpp.o: ../StockDocuments.cpp \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../StockDocuments.h \
-  ../Documents.h
+  ../Documents.h \
+  ../Dictionnaires.h
 
 CMakeFiles/Projet-cpp.dir/main.cpp.o: ../main.cpp \
   /usr/include/stdc-predef.h \

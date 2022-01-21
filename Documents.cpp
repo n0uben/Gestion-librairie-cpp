@@ -71,3 +71,13 @@ double Documents::calculFraisTransport(int kilometres) const
     
     return fraisTransport;
 }
+
+double Documents::fraisLivraison(int kilometres) const
+{
+    double totalFraisLivraison(0);
+
+    totalFraisLivraison = this->getFrais() + this->calculFraisTransport(kilometres);
+
+    return totalFraisLivraison;
+
+}

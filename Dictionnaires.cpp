@@ -46,3 +46,12 @@ void Dictionnaires::afficher() const
     cout << "Langue : " << this->getLangue() << endl;
     cout << "Frais particulier : " << this->getFraisParticulier() << "€" << endl;
 }
+
+double Dictionnaires::fraisLivraison(int kilometres) const
+{
+    double totalFraisLivraison(0);
+
+    totalFraisLivraison += Documents::fraisLivraison(kilometres) + this->getFraisParticulier();
+
+    return totalFraisLivraison;
+}

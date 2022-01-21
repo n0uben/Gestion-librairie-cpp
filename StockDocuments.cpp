@@ -3,18 +3,25 @@
 #include <vector>
 
 #include "StockDocuments.h"
+#include "Documents.h"
+#include "Dictionnaires.h"
 
 using namespace std;
 
-StockDocuments::StockDocuments()
+StockDocuments::StockDocuments() {}
+
+void StockDocuments::ajouterDansCollection(Documents* nouveauDocument)
 {
-    this->maCollection.push_back("test");
-    this->maCollection.push_back("test2");
+    this->maCollection.push_back(nouveauDocument);
+    cout << nouveauDocument->getTitre() << " a bien été rajouté !" << endl;
 }
-void StockDocuments::afficher() const
+
+void StockDocuments::afficherStock() const
 {
     for (int i(0); i < maCollection.size(); i++)
     {
-        cout << maCollection[i] << endl;
+        maCollection[i]->afficher();
+        cout << endl;
     }
 }
+

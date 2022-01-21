@@ -13,20 +13,21 @@ using namespace std;
 
 int main(void)
 {
+
     Documents monDocument("Le rouge et le noir", 1);
     Dictionnaires monDictionnaire("Dictionnaire Francais/Anglais", 2, "Anglais");
 
-    //tests masquage fonction (héritage)
-    monDocument.afficher();
-    
-    cout << " " << endl;
-
-    monDictionnaire.afficher();
-
-    cout << " " << endl;
-
     StockDocuments monStock;
+    // monStock.ajouterDansCollection(monDocument);
+    // monStock.ajouterDansCollection(monDictionnaire);
+    monStock.ajouterDansCollection(&monDocument);
+    monStock.ajouterDansCollection(&monDictionnaire);
 
-    monStock.afficher();
+    monStock.afficherStock();
 
+
+    cout << monDocument.fraisLivraison(20) << endl;
+    cout << monDictionnaire.fraisLivraison(20) << endl;
+
+    // monStock.afficherStock();
 }

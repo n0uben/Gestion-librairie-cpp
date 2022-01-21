@@ -24,6 +24,7 @@ class Documents
         //Méthodes
         void afficher() const;
         double calculFraisTransport(int kilometres) const;
+        double fraisLivraison(int kilometres) const;
 
     //le status protected permet aux classe filles
     // d’accéder aux attributs parents

@@ -13,12 +13,11 @@ class StockDocuments
         StockDocuments();
 
         //Methodes
-        void ajouterDansCollection();
-        void afficher() const;
-        double fraisLivraison() const;
+        void ajouterDansCollection(Documents* nouveauDocument);
+        void afficherStock() const;
 
     protected:
-        std::vector<std::string> maCollection;
+        std::vector<Documents*> maCollection;
 };
 
 #endif
