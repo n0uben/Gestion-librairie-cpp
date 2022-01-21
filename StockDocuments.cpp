@@ -27,5 +27,12 @@ void StockDocuments::afficherStock() const
 
 double StockDocuments::fraisLivraison(int kilometres) const
 {
-    return 0.5;
+    double totalFraisLivraisonStock(0);
+
+    for (int i(0); i < maCollection.size(); i++)
+    {
+        totalFraisLivraisonStock += maCollection[i]->fraisLivraison(kilometres);
+        cout << endl;
+    }
+    return totalFraisLivraisonStock;
 }

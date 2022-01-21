@@ -25,9 +25,10 @@ int main(void)
 
     monStock.afficherStock();
 
-
     cout << monDocument.fraisLivraison(20) << endl;
     cout << monDictionnaire.fraisLivraison(20) << endl;
+    cout << endl ;
+    cout << monStock.fraisLivraison(20) << endl;
 
     // monStock.afficherStock();
 }

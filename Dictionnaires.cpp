@@ -41,7 +41,7 @@ void Dictionnaires::setFraisParticulier(double nouveauxFraisParticulier)
 //Methodes
 void Dictionnaires::afficher() const
 {
-    Documents::afficher();
+    this->Documents::afficher();
 
     cout << "Langue : " << this->getLangue() << endl;
     cout << "Frais particulier : " << this->getFraisParticulier() << "€" << endl;
@@ -51,7 +51,7 @@ double Dictionnaires::fraisLivraison(int kilometres) const
 {
     double totalFraisLivraison(0);
 
-    totalFraisLivraison += Documents::fraisLivraison(kilometres) + this->getFraisParticulier();
+    totalFraisLivraison += this->Documents::fraisLivraison(kilometres) + this->getFraisParticulier();
 
     return totalFraisLivraison;
 }

@@ -22,9 +22,9 @@ class Documents
         void setFraisFixes(double nouveauxFraisFixes);
 
         //Méthodes
-        void afficher() const;
+        virtual void afficher() const;
         double calculFraisTransport(int kilometres) const;
-        double fraisLivraison(int kilometres) const;
+        virtual double fraisLivraison(int kilometres) const;
 
     //le status protected permet aux classe filles
     // d’accéder aux attributs parents
