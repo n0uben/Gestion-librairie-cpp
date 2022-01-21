@@ -8,7 +8,7 @@ class Dictionnaires : public Documents
 {
     public:
         //Constructeur
-        Dictionnaires(std::string titre, std::string langue);
+        Dictionnaires(std::string titre, int numen, std::string langue);
 
         //Getters
         std::string getLangue() const;

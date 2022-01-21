@@ -6,7 +6,7 @@
 using namespace std;
 
 //Constructeur
-Dictionnaires::Dictionnaires(string titre, string langue): Documents(titre), langue(langue), fraisParticulier(10)
+Dictionnaires::Dictionnaires(string titre, int numen, string langue): Documents(titre, numen), langue(langue), fraisParticulier(10)
 {
 
 }

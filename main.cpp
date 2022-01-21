@@ -14,7 +14,7 @@ using namespace std;
 int main(void)
 {
     Documents monDocument("Le rouge et le noir", 1);
-    Dictionnaires monDictionnaire("Dictionnaire Francais/Anglais", "Anglais");
+    Dictionnaires monDictionnaire("Dictionnaire Francais/Anglais", 2, "Anglais");
 
     //tests masquage fonction (héritage)
     monDocument.afficher();
