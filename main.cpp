@@ -18,7 +18,15 @@ int main(void)
 
     //tests masquage fonction (héritage)
     monDocument.afficher();
+    
+    cout << " " << endl;
 
     monDictionnaire.afficher();
+
+    cout << " " << endl;
+
+    StockDocuments monStock;
+
+    monStock.afficher();
 
 }

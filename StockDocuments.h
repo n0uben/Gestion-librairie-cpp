@@ -1,6 +1,7 @@
 #ifndef DEF_STOCKDOCUMENTS
 #define DEF_STOCKDOCUMENTS
 
+#include <string>
 #include <vector>
 
 #include "Documents.h"
@@ -13,11 +14,11 @@ class StockDocuments
 
         //Methodes
         void ajouterDansCollection();
-
-        double fraisLivraison();
+        void afficher() const;
+        double fraisLivraison() const;
 
     protected:
-        std::vector<Documents> maCollection;
+        std::vector<std::string> maCollection;
 };
 
 #endif
