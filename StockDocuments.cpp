@@ -48,4 +48,4 @@ void StockDocuments::afficherFraisLivraison(int kilometres) const
         cout << "Veuillez saisir un nombre de kilometres positif pour obtenir les frais de Livraison" << endl;
     }
 
-    }
+}
