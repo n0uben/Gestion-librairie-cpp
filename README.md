@@ -17,24 +17,27 @@ Les frais de livraison sont établis de la manière suivante :
 
 ## 1. Définissez les classes nécessaires pour cette application. 
 **Chacune de ces classes comporte :**
-- (a) un constructeur qui permet d'initialiser toutes les variables d'instances,
-- (b) les accesseurs (getters), les modifieurs (setters)
-- (c) la méthode afficher() qui affiche les attributs de chaque classe.
-- (d) une méthode fraisLivraison() qui renvoie le coût des frais de livraison.
+(a) un constructeur qui permet d'initialiser toutes les variables d'instances
+(b) les accesseurs (getters), les modifieurs (setters)
+(c) la méthode afficher() qui affiche les attributs de chaque classe.
+(d) une méthode fraisLivraison() qui renvoie le coût des frais de livraison.
 
 ## 2. Définissez la classe StockDocuments 
 **Cette classe a pour but de gérer une collection de documents et qui comporte :**
-(a) un constructeur pour créèer une collection vide de documents,
-(b) une fonction permettant d'ajouter un document à la collection,
-(c) une méthode afficher() qui affiche tous les documents du stock.
-(d) une méthode fraisLivraison() qui renvoie le coût des frais de livraison du stock.
+(a) un constructeur pour créer une collection vide de documents
+
+(b) une fonction permettant d'ajouter un document à la collection
+
+(c) une méthode afficher() qui affiche tous les documents du stock
+
+(d) une méthode fraisLivraison() qui renvoie le coût des frais de livraison du stock
 
 Dans cette question, on peut utiliser le type Vector de C++ pour stocker une collection.
 
 ## Afin de tester les classes qui précédent
 
 **Définissez un programme qui permet d'afficher un bon de livraison pour les documents suivants :**
-``----------------------------------------------------
+``
 
 Manuel: Titre :Dissertation et methodes, numen:234, Auteur:Rochefort et Dalie,Niveau:2
 Dictionnaire:Titre:Larousse anglais, numen:456, Langue:anglais
@@ -42,4 +45,5 @@ Roman : Titre:Les contemplations, numen:765, Auteur:Victor Hugo, nbprix:8
 
 ------------------------------------------------------
 
-Frais Livraison pour une distance de 20km est : 19 Euros``
+Frais Livraison pour une distance de 20km est : 19 Euros
+``
