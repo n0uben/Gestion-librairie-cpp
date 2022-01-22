@@ -26,8 +26,5 @@ int main(void)
     monStock.ajouterDansCollection(&monDictionnaire);
 
     monStock.afficherStock();
-
-    cout << "Total : " << monStock.fraisLivraison(20) << "€" << endl;
-
-    // monStock.afficherStock();
+    monStock.afficherFraisLivraison(54.548414164);
 }

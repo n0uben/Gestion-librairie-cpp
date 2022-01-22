@@ -18,11 +18,13 @@ void StockDocuments::ajouterDansCollection(Documents* nouveauDocument)
 
 void StockDocuments::afficherStock() const
 {
+    cout << "---------------------------------------------------------------------------------" << endl;
     for (int i(0); i < maCollection.size(); i++)
     {
         maCollection[i]->afficher();
         cout << endl;
     }
+    cout << "---------------------------------------------------------------------------------" << endl;
 }
 
 double StockDocuments::fraisLivraison(int kilometres) const
@@ -35,3 +37,15 @@ double StockDocuments::fraisLivraison(int kilometres) const
     }
     return totalFraisLivraisonStock;
 }
+
+void StockDocuments::afficherFraisLivraison(int kilometres) const
+{
+    if (kilometres > 0)
+    {
+        cout << "Frais Livraison pour une distance de " << kilometres << "km est : " << this->fraisLivraison(kilometres) << "Euros" << endl;
+    }
+    else {
+        cout << "Veuillez saisir un nombre de kilometres positif pour obtenir les frais de Livraison" << endl;
+    }
+
+    }

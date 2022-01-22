@@ -50,9 +50,8 @@ void Documents::setFraisFixes(double nouveauxFraisFixes)
 // METHODES
 void Documents::afficher() const
 {
-    cout << "Titre : " << this->getTitre() << endl;
-    cout << "Numen : " << this->getNumen() << endl;
-    cout << "Frais fixes : " << this->getFrais() << "€" << endl;
+    cout << "Titre : " << this->getTitre() << ", ";
+    cout << "Numen : " << this->getNumen();
 }
 
 double Documents::calculFraisTransport(int kilometres) const

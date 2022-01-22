@@ -16,6 +16,7 @@ class StockDocuments
         void ajouterDansCollection(Documents* nouveauDocument);
         void afficherStock() const;
         double fraisLivraison(int kilometres) const;
+        void afficherFraisLivraison(int kilometres) const;
 
     private:
         std::vector<Documents*> maCollection;
