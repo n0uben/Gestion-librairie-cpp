@@ -35,9 +35,11 @@ Dans cette question, on peut utiliser le type Vector de C++ pour stocker une col
 
 **Définissez un programme qui permet d'afficher un bon de livraison pour les documents suivants :**
 _---------------------------------------------------------------------------------
+
 Manuel: Titre :Dissertation et methodes, numen:234, Auteur:Rochefort et Dalie,Niveau:2
 Dictionnaire:Titre:Larousse anglais, numen:456, Langue:anglais
 Roman : Titre:Les contemplations, numen:765, Auteur:Victor Hugo, nbprix:8
+
 ---------------------------------------------------------------------------------_
 
 Frais Livraison pour une distance de 20km est : 19 Euros
