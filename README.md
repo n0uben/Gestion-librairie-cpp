@@ -16,14 +16,14 @@ Les frais de livraison sont établis de la manière suivante :
 - des frais de transport calculés de la manière suivante : distance ∗ prixunitaire. On suppose que le prix unitaire est égal à 0.05 par kilométre.
 
 ## 1. Définissez les classes nécessaires pour cette application. 
-**Chacune de ces classes comporte :**
+**Chacune de ces classes comporte :**<br>
 (a) un constructeur qui permet d'initialiser toutes les variables d'instances<br>
 (b) les accesseurs (getters), les modifieurs (setters)<br>
 (c) la méthode afficher() qui affiche les attributs de chaque classe.<br>
 (d) une méthode fraisLivraison() qui renvoie le coût des frais de livraison.<br>
 
 ## 2. Définissez la classe StockDocuments 
-**Cette classe a pour but de gérer une collection de documents et qui comporte :**
+**Cette classe a pour but de gérer une collection de documents et qui comporte :**<br>
 (a) un constructeur pour créer une collection vide de documents<br>
 (b) une fonction permettant d'ajouter un document à la collection<br>
 (c) une méthode afficher() qui affiche tous les documents du stock<br>
