@@ -41,6 +41,9 @@ void Dictionnaires::setFraisParticulier(double nouveauxFraisParticulier)
 //Methodes
 void Dictionnaires::afficher() const
 {
+    
+    cout << "Dictionnaire : " ;
+
     this->Documents::afficher();
 
     cout << ", Langue : " << this->getLangue();

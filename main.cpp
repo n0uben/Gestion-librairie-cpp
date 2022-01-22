@@ -26,5 +26,5 @@ int main(void)
     monStock.ajouterDansCollection(&monDictionnaire);
 
     monStock.afficherStock();
-    monStock.afficherFraisLivraison(54.548414164);
+    monStock.afficherFraisLivraison(20);
 }

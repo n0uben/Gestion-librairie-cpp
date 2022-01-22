@@ -42,7 +42,7 @@ void StockDocuments::afficherFraisLivraison(int kilometres) const
 {
     if (kilometres > 0)
     {
-        cout << "Frais Livraison pour une distance de " << kilometres << "km est : " << this->fraisLivraison(kilometres) << "Euros" << endl;
+        cout << "Frais Livraison pour une distance de " << kilometres << "km est : " << this->fraisLivraison(kilometres) << " Euros" << endl;
     }
     else {
         cout << "Veuillez saisir un nombre de kilometres positif pour obtenir les frais de Livraison" << endl;
