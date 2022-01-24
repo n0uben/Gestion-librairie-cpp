@@ -10,6 +10,15 @@ using namespace std;
 
 StockDocuments::StockDocuments() {}
 
+StockDocuments::~StockDocuments()
+{
+    for (int i(0); i < maCollection.size(); i++)
+    {
+        delete maCollection[i];
+        maCollection[i] = 0;
+    }
+}
+
 void StockDocuments::ajouterDansCollection(Documents* nouveauDocument)
 {
     this->maCollection.push_back(nouveauDocument);

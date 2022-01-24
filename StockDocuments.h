@@ -12,6 +12,9 @@ class StockDocuments
         //constructeur
         StockDocuments();
 
+        //destructeur
+        ~StockDocuments();
+
         //Methodes
         void ajouterDansCollection(Documents* nouveauDocument);
         void afficherStock() const;

@@ -14,17 +14,15 @@ using namespace std;
 int main(void)
 {
 
-    Documents monDocument("Le rouge et le noir", 1);
-    Documents monDocument2("Madame Bovary", 2);
-    Dictionnaires monDictionnaire("Dictionnaire Francais/Anglais", 3, "Anglais");
-
-    StockDocuments monStock;
+    StockDocuments *monStock = new StockDocuments();
     // monStock.ajouterDansCollection(monDocument);
     // monStock.ajouterDansCollection(monDictionnaire);
-    monStock.ajouterDansCollection(&monDocument);
-    monStock.ajouterDansCollection(&monDocument2);
-    monStock.ajouterDansCollection(&monDictionnaire);
+    monStock->ajouterDansCollection(new Documents("Le rouge et le noir", 1));
+    monStock->ajouterDansCollection(new Documents("Madame Bovary", 2));
+    monStock->ajouterDansCollection(new Dictionnaires("Dictionnaire Francais/Anglais", 3, "Anglais"));
 
-    monStock.afficherStock();
-    monStock.afficherFraisLivraison(20);
+    monStock->afficherStock();
+    monStock->afficherFraisLivraison(20);
+
+    delete monStock;
 }
