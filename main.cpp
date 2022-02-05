@@ -17,6 +17,7 @@ int main(void)
     StockDocuments *monStock = new StockDocuments();
     // monStock.ajouterDansCollection(monDocument);
     // monStock.ajouterDansCollection(monDictionnaire);
+    // monStock->ajouterDansCollection(new Romans("Harry Potter et l'ecole des sorciers","J.K.Rowling",1));
     monStock->ajouterDansCollection(new Documents("Le rouge et le noir", 1));
     monStock->ajouterDansCollection(new Documents("Madame Bovary", 2));
     monStock->ajouterDansCollection(new Dictionnaires("Dictionnaire Francais/Anglais", 3, "Anglais"));
