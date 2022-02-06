@@ -10,9 +10,9 @@
 
 using namespace std;
 
-void fonctionAjouterDansCollection(StockDocuments monStock, Documents* nouveauDocument)
+void fonctionAjouterDansCollection(StockDocuments* monStock, Documents* nouveauDocument)
 {
-    monStock.ajouterDansCollection(nouveauDocument);
+    monStock->ajouterDansCollection(nouveauDocument);
 }
 
 int main(void)
@@ -26,7 +26,10 @@ int main(void)
     monStock->ajouterDansCollection(new Documents("Madame Bovary", 2));
     monStock->ajouterDansCollection(new Dictionnaires("Dictionnaire Francais/Anglais", 3, "Anglais"));
 
-    fonctionAjouterDansCollection(*monStock, new Dictionnaires("test", 4, "français"));
+    fonctionAjouterDansCollection(
+        monStock,
+        new Romans("Test roman", 4, "test auteur", 72)
+    );
 
     monStock->afficherStock();
     monStock->afficherFraisLivraison(20);

@@ -9,8 +9,6 @@ class Romans : public Livres
     public:
         //Constructeur
         Romans(std::string titre, int numen, std::string auteur, int prixLitteraire);
-        void auteur(std::string auteur);
-        void prixLitteraire(int prixLitteraire);
 
         //Getters
         std::string getAuteur() const;

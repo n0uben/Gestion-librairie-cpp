@@ -9,8 +9,6 @@ class Manuels : public Livres
     public:
         //Constructeur
         Manuels(std::string titre, int numen, std::string auteur, int niveauScolaire);
-        void auteur(std::string auteur);
-        void niveauScolaire(int niveauScolaire);
 
         //Getters
         std::string getAuteur() const;

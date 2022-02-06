@@ -9,7 +9,6 @@ class Livres : public Documents
     public:
         //Constructeur
         Livres(std::string titre, int numen, std::string auteur);
-        void auteur(std::string auteur);
 
         //Getters
         virtual std::string getAuteur() const;
