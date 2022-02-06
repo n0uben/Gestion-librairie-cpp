@@ -12,7 +12,7 @@ class Livres : public Documents
         void auteur(std::string auteur);
 
         //Getters
-        std::string getAuteur() const;
+        virtual std::string getAuteur() const;
 
         //Setters
         void setAuteur(std::string auteur);

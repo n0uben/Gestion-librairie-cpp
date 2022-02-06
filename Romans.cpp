@@ -6,7 +6,7 @@
 using namespace std;
 
 //Constructeur
-Romans::Romans(string titre, int numen, string auteur, int prixLitteraire): Documents(titre, numen) //, auteur, prixLitteraire
+Romans::Romans(string titre, int numen, string auteur, int prixLitteraire): Documents(titre, numen), auteur(auteur), prixLitteraire(prixLitteraire)
 {
 
 }
@@ -42,13 +42,4 @@ void Romans::afficher() const
     cout << ", auteur : " << this->getAuteur();
     
     cout << ", prix litteraire : " << this->getPrixLitteraire();
-}
-double Romans::fraisLivraison(int kilometres) const
-{
-    double totalFraisLivraison(0);
-
-    totalFraisLivraison = this->getFrais() + this->calculFraisTransport(kilometres);
-
-    return totalFraisLivraison;
-
 }

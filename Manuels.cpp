@@ -6,7 +6,7 @@
 using namespace std;
 
 //Constructeur
-Manuels::Manuels(string titre, int numen, string auteur, int niveauScolaire): Documents(titre, numen)
+Manuels::Manuels(string titre, int numen, string auteur, int niveauScolaire): Livres(titre, numen), auteur(auteur), niveauScolaire(niveauScolaire)
 {
 
 }
@@ -42,13 +42,4 @@ void Manuels::afficher() const
     cout << ", auteur : " << this->getAuteur();
     
     cout << ", niveau scolaire : " << this->getNiveauScolaire();
-}
-double Manuels::fraisLivraison(int kilometres) const
-{
-    double totalFraisLivraison(0);
-
-    totalFraisLivraison = this->getFrais() + this->calculFraisTransport(kilometres);
-
-    return totalFraisLivraison;
-
 }

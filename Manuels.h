@@ -4,7 +4,7 @@
 #include <string>
 #include "Documents.h"
 
-class Manuels : public Documents // voir si pas public Livres
+class Manuels : public Livres
 {
     public:
         //Constructeur
