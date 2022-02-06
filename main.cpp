@@ -40,5 +40,5 @@ int main(void)
     monStock->afficherStock();
     monStock->afficherFraisLivraison(20);
 
-    delete monStock;
+    delete monStock; 
 }
