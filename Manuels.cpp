@@ -6,10 +6,7 @@
 using namespace std;
 
 //Constructeur
-Manuels::Manuels(string titre, int numen, string auteur, int niveauScolaire): Livres(titre, numen), auteur(auteur), niveauScolaire(niveauScolaire)
-{
-
-}
+Manuels::Manuels(string titre, int numen, string auteur, int niveauScolaire): Livres(titre, numen, auteur), niveauScolaire(niveauScolaire) {}
 
 //Getters
 std::string Manuels::getAuteur() const

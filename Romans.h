@@ -24,8 +24,8 @@ class Romans : public Livres
         virtual void afficher() const;
 
     private:
-        std::string nouvelAuteur;
-        int nouveauPrixLitteraire;
+        std::string auteur;
+        int prixLitteraire;
 };
 
 #endif

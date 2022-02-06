@@ -18,7 +18,7 @@ return this->auteur;
 }
 
 //Setters
-void Livres::setAuteur(std::string nouvelAuteur)
+void Livres::setAuteur(string nouvelAuteur)
 {
     this->auteur = nouvelAuteur;
 }

@@ -6,7 +6,7 @@
 using namespace std;
 
 //Constructeur
-Romans::Romans(string titre, int numen, string auteur, int prixLitteraire): Livres(titre, numen), auteur(auteur), prixLitteraire(prixLitteraire)
+Romans::Romans(string titre, int numen, string auteur, int prixLitteraire): Livres(titre, numen, auteur), prixLitteraire(prixLitteraire)
 {
 
 }
@@ -14,11 +14,11 @@ Romans::Romans(string titre, int numen, string auteur, int prixLitteraire): Livr
 //Getters
 std::string Romans::getAuteur() const
 {
-    return this->nouvelAuteur;
+    return this->auteur;
 }
 int Romans::getPrixLitteraire() const
 {
-    return this->nouveauPrixLitteraire;
+    return this->prixLitteraire;
 }
 
 //Setters

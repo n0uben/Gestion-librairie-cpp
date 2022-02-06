@@ -24,8 +24,8 @@ class Manuels : public Livres
         virtual void afficher() const;
 
     private:
-        std::string nouvelAuteur;
-        int nouveauNiveauScolaire;
+        std::string auteur;
+        int niveauScolaire;
 };
 
 #endif
