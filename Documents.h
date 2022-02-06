@@ -12,6 +12,7 @@ class Documents
         //Destructeur
 
         //Getters
+        std::string getTypeDoc() const;
         std::string getTitre() const;
         int getNumen() const;
         double getFrais() const;
@@ -29,6 +30,7 @@ class Documents
     //le status protected permet aux classe filles
     // d’accéder aux attributs parents
     protected:
+        std::string typeDoc;
         std::string titre;
         int numen;
         double fraisFixes;

@@ -7,11 +7,16 @@ using namespace std;
 
 // CONSTRUCTEUR
 
-Documents::Documents(std::string titre, int numen): titre(titre), numen(numen), fraisFixes(2) {}
+Documents::Documents(std::string titre, int numen): titre(titre), numen(numen), fraisFixes(2) , typeDoc("Document") {}
 
 //DESTRUCTEUR
 
 // GETTERS
+string Documents::getTypeDoc() const 
+{
+    return this->typeDoc;
+}
+
 string Documents::getTitre() const
 {
     return this->titre;

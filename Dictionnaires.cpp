@@ -6,9 +6,9 @@
 using namespace std;
 
 //Constructeur
-Dictionnaires::Dictionnaires(string titre, int numen, string langue): Documents(titre, numen), langue(langue), fraisParticulier(10)
+Dictionnaires::Dictionnaires(string titre, int numen, string langue): Documents(titre, numen), langue(langue), fraisParticulier(10) 
 {
-
+    this->typeDoc = "Dictionnaire";
 }
 
 //Getters
@@ -42,7 +42,7 @@ void Dictionnaires::setFraisParticulier(double nouveauxFraisParticulier)
 void Dictionnaires::afficher() const
 {
     
-    cout << "Dictionnaire : " ;
+    cout << this->getTypeDoc() << " : ";
 
     this->Documents::afficher();
 
