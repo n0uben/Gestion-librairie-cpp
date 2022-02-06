@@ -22,7 +22,7 @@ StockDocuments::~StockDocuments()
 void StockDocuments::ajouterDansCollection(Documents* nouveauDocument)
 {
     this->maCollection.push_back(nouveauDocument);
-    cout << nouveauDocument->getTitre() << " a bien été rajouté !" << endl;
+    //cout << nouveauDocument->getTitre() << " a bien été rajouté dans le stock !" << endl;
 }
 
 void StockDocuments::afficherStock() const

@@ -24,4 +24,9 @@ void Livres::setAuteur(string nouvelAuteur)
 }
 
 //Methodes
-// Récupère celles de Documents.h et Documents.cpp
+void Livres::afficher() const
+{
+    this->Documents::afficher();
+
+    cout << ", Auteur:" << this->getAuteur();
+}

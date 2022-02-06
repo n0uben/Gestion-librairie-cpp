@@ -8,7 +8,7 @@ using namespace std;
 //Constructeur
 Romans::Romans(string titre, int numen, string auteur, int prixLitteraire): Livres(titre, numen, auteur), prixLitteraire(prixLitteraire)
 {
-
+    this->typeDoc = "Roman";
 }
 
 //Getters
@@ -34,12 +34,9 @@ void Romans::setPrixLitteraire(int nouveauPrixLitteraire)
 //Methodes
 void Romans::afficher() const
 {
-    
-    cout << "Roman : " ;
+    cout << this->getTypeDoc() << " : "; 
 
-    this->Documents::afficher();
+    this->Livres::afficher();
 
-    cout << ", auteur : " << this->getAuteur();
-    
-    cout << ", prix litteraire : " << this->getPrixLitteraire();
+    cout << ", nbPrix : " << this->getPrixLitteraire();
 }

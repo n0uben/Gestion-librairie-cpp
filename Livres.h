@@ -11,13 +11,13 @@ class Livres : public Documents
         Livres(std::string titre, int numen, std::string auteur);
 
         //Getters
-        virtual std::string getAuteur() const;
+        std::string getAuteur() const;
 
         //Setters
         void setAuteur(std::string nouvelAuteur);
 
         //Methodes
-        // virtual void afficher() const;
+        virtual void afficher() const;
 
     protected:
         std::string auteur;

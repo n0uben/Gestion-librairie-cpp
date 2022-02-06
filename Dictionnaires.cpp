@@ -46,7 +46,7 @@ void Dictionnaires::afficher() const
 
     this->Documents::afficher();
 
-    cout << ", Langue : " << this->getLangue();
+    cout << ", Langue:" << this->getLangue();
 }
 
 double Dictionnaires::fraisLivraison(int kilometres) const

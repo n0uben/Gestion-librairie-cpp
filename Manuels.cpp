@@ -6,7 +6,10 @@
 using namespace std;
 
 //Constructeur
-Manuels::Manuels(string titre, int numen, string auteur, int niveauScolaire): Livres(titre, numen, auteur), niveauScolaire(niveauScolaire) {}
+Manuels::Manuels(string titre, int numen, string auteur, int niveauScolaire): Livres(titre, numen, auteur), niveauScolaire(niveauScolaire) 
+{
+    this->typeDoc = "Manuel";
+}
 
 //Getters
 std::string Manuels::getAuteur() const
@@ -32,11 +35,9 @@ void Manuels::setNiveauScolaire(int nouveauNiveauScolaire)
 void Manuels::afficher() const
 {
     
-    cout << "Manuel : " ;
+    cout << this->getTypeDoc() << " : "; 
 
-    this->Documents::afficher();
-
-    cout << ", auteur : " << this->getAuteur();
+    this->Livres::afficher();
     
-    cout << ", niveau scolaire : " << this->getNiveauScolaire();
+    cout << ", Niveau : " << this->getNiveauScolaire();
 }

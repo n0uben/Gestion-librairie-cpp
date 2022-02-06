@@ -19,17 +19,23 @@ int main(void)
 {
 
     StockDocuments *monStock = new StockDocuments();
-    // monStock.ajouterDansCollection(monDocument);
-    // monStock.ajouterDansCollection(monDictionnaire);
-    // monStock->ajouterDansCollection(new Romans("Harry Potter et l'ecole des sorciers","J.K.Rowling",1));
-    monStock->ajouterDansCollection(new Documents("Le rouge et le noir", 1));
-    monStock->ajouterDansCollection(new Documents("Madame Bovary", 2));
-    monStock->ajouterDansCollection(new Dictionnaires("Dictionnaire Francais/Anglais", 3, "Anglais"));
+
 
     fonctionAjouterDansCollection(
         monStock,
-        new Romans("Test roman", 4, "test auteur", 72)
+        new Manuels("Dissertation et methodes", 234, "Rochefort et Dalie", 2)
     );
+
+    fonctionAjouterDansCollection(
+        monStock,
+        new Dictionnaires("Larousse anglais", 456, "anglais")
+    );
+
+    fonctionAjouterDansCollection(
+        monStock,
+        new Romans("Les contemplations", 765, "Victor Hugo", 8)
+    );
+
 
     monStock->afficherStock();
     monStock->afficherFraisLivraison(20);
