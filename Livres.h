@@ -21,7 +21,7 @@ class Livres : public Documents
         // virtual void afficher() const;
 
     protected:
-        std::string auteur;
+        std::string nouvelAuteur;
 };
 
 #endif
