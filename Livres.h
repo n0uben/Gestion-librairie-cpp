@@ -9,22 +9,18 @@ class Livres : public Documents
     public:
         //Constructeur
         Livres(std::string titre, int numen, std::string auteur);
+        void auteur(std::string auteur);
 
         //Getters
-        std::string getTitre() const;
-        int getNumen() const;
         std::string getAuteur() const;
 
         //Setters
-        void setTitre(std::string nouveauTitre);
-        void setNumen(int nouveauNumen);
-        void setAuteur(std::string NouvelAuteur);
+        void setAuteur(std::string auteur);
 
         //Methodes
-        virtual void afficher() const;
-        virtual double fraisLivraison(int kilometres) const;
+        // virtual void afficher() const;
 
-    private:
+    protected:
         std::string auteur;
 };
 
