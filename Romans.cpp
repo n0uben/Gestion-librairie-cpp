@@ -6,7 +6,7 @@
 using namespace std;
 
 //Constructeur
-Romans::Romans(string titre, int numen, string auteur, int prixLitteraire): Documents(titre, numen) //, auteur, prixLitteraire
+Romans::Romans(string titre, int numen, string auteur, int prixLitteraire): Livres(titre, numen), auteur(auteur), prixLitteraire(prixLitteraire)
 {
 
 }
@@ -14,11 +14,11 @@ Romans::Romans(string titre, int numen, string auteur, int prixLitteraire): Docu
 //Getters
 std::string Romans::getAuteur() const
 {
-    return this->auteur;
+    return this->nouvelAuteur;
 }
 int Romans::getPrixLitteraire() const
 {
-    return this->prixLitteraire;
+    return this->nouveauPrixLitteraire;
 }
 
 //Setters
@@ -42,13 +42,4 @@ void Romans::afficher() const
     cout << ", auteur : " << this->getAuteur();
     
     cout << ", prix litteraire : " << this->getPrixLitteraire();
-}
-double Romans::fraisLivraison(int kilometres) const
-{
-    double totalFraisLivraison(0);
-
-    totalFraisLivraison = this->getFrais() + this->calculFraisTransport(kilometres);
-
-    return totalFraisLivraison;
-
 }

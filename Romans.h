@@ -2,33 +2,30 @@
 #define DEF_ROMANS_H
 
 #include <string>
-#include "Documents.h"
+#include "Livres.h"
 
-class Romans : public Documents // voir si pas public Livres
+class Romans : public Livres
 {
     public:
         //Constructeur
         Romans(std::string titre, int numen, std::string auteur, int prixLitteraire);
+        void auteur(std::string auteur);
+        void prixLitteraire(int prixLitteraire);
 
         //Getters
-        std::string getTitre() const;
-        int getNumen() const;
         std::string getAuteur() const;
         int getPrixLitteraire() const;
 
         //Setters
-        void setTitre(std::string nouveauTitre);
-        void setNumen(int nouveauNumen);
         void setAuteur(std::string NouvelAuteur);
         void setPrixLitteraire(int nouveauPrixLitteraire);
 
         //Methodes
         virtual void afficher() const;
-        virtual double fraisLivraison(int kilometres) const;
 
     private:
-        std::string auteur;
-        int prixLitteraire;
+        std::string nouvelAuteur;
+        int nouveauPrixLitteraire;
 };
 
 #endif
