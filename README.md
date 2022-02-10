@@ -1,5 +1,8 @@
 # TP C++ : Gestion de livraisons d'une librairie
 
+Projet réalisé dans le cadre du DUT Informatique, à l’université de Lorraine
+___
+
 On souhaite écrire une application pour la gestion des livraisons de documents d'une librairie.
 Tous les documents sont définis par :
 - un titre : le titre du document qui est une chaîne de caractères
